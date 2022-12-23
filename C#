@@ -1,0 +1,45 @@
+// задача 15
+
+Console.WriteLine("Введите число: ");
+
+int day = int.Parse(Console.ReadLine());
+
+if (day == 6 || day == 7)
+{
+    Console.WriteLine("выходной");
+}
+else
+{
+    Console.WriteLine("не выходной");
+}
+
+//задача 13
+Console.WriteLine("введите число: ");
+int number = int.Parse(Console.ReadLine());
+
+int divider = 10;
+
+if (number > 99)
+{
+    while (number > 1000) 
+    {
+        number = number / divider;
+    }
+    number = number % 10;
+    
+    Console.WriteLine(number);
+}
+else
+{
+    Console.WriteLine("третьего числа нет");
+}
+
+
+
+
+//задача 10
+Console.WriteLine("введите трех значное число: ");
+int number1 = int.Parse(Console.ReadLine());
+
+int answer = number1 % 100 / 10;
+Console.Write($"вторая цифра в числе: {answer}");
